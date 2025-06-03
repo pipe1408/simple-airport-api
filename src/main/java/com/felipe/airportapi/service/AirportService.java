@@ -3,8 +3,8 @@ package com.felipe.airportapi.service;
 import com.felipe.airportapi.entity.Airport;
 import com.felipe.airportapi.entity.dto.AirportDTO;
 import com.felipe.airportapi.entity.repository.AirportJPA;
-import com.felipe.airportapi.exceptions.AirportAlreadyExistsException;
-import com.felipe.airportapi.exceptions.AirportNotFoundException;
+import com.felipe.airportapi.service.exceptions.AirportAlreadyExistsException;
+import com.felipe.airportapi.service.exceptions.AirportNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

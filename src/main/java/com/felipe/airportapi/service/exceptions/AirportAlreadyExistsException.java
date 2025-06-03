@@ -1,4 +1,4 @@
-package com.felipe.airportapi.exceptions;
+package com.felipe.airportapi.service.exceptions;
 
 public class AirportAlreadyExistsException extends RuntimeException {
     public AirportAlreadyExistsException(String code) {

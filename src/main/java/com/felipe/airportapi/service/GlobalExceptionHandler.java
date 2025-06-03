@@ -1,7 +1,7 @@
 package com.felipe.airportapi.service;
 
-import com.felipe.airportapi.exceptions.AirportAlreadyExistsException;
-import com.felipe.airportapi.exceptions.AirportNotFoundException;
+import com.felipe.airportapi.service.exceptions.AirportAlreadyExistsException;
+import com.felipe.airportapi.service.exceptions.AirportNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

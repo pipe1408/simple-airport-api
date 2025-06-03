@@ -1,4 +1,4 @@
-package com.felipe.airportapi.exceptions;
+package com.felipe.airportapi.service.exceptions;
 
 public class AirportNotFoundException extends RuntimeException {
     public AirportNotFoundException(String airportId) {
