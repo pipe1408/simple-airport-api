@@ -1,4 +1,4 @@
-package com.felipe.airportapi.entity.auxiliary;
+package com.felipe.airportapi.entity.helper;
 
 public enum State {
     ONTIME,

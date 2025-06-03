@@ -1,6 +1,6 @@
 package com.felipe.airportapi.entity;
 
-import com.felipe.airportapi.entity.auxiliary.State;
+import com.felipe.airportapi.entity.helper.State;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
