@@ -1,6 +1,6 @@
 package com.felipe.airportapi.entity.helper;
 
-public enum State {
+public enum FlightStatus {
     ONTIME,
     DELAYED,
     CANCELLED,

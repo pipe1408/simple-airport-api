@@ -1,6 +1,6 @@
 package com.felipe.airportapi.entity;
 
-import com.felipe.airportapi.entity.helper.State;
+import com.felipe.airportapi.entity.helper.FlightStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -33,5 +33,5 @@ public class Flight {
     @Column(name = "FREE_SEATS", nullable = false)
     private Integer freeSeats;
     @Column(name = "STATUS", columnDefinition = "ENUM not null")
-    private State status;
+    private FlightStatus status;
 }
