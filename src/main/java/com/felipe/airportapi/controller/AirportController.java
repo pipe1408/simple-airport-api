@@ -3,6 +3,7 @@ package com.felipe.airportapi.controller;
 import com.felipe.airportapi.entity.Airport;
 import com.felipe.airportapi.entity.dto.AirportDTO;
 import com.felipe.airportapi.service.AirportService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,13 +31,13 @@ public class AirportController {
     }
 
     @PostMapping
-    public ResponseEntity<Airport> createAirport(@RequestBody AirportDTO airportDTO) {
+    public ResponseEntity<Airport> createAirport(@RequestBody @Valid AirportDTO airportDTO) {
         Airport airport = airportService.saveAirport(airportDTO);
         return new ResponseEntity<>(airport, HttpStatus.CREATED);
     }
 
     @PutMapping
-    public ResponseEntity<Airport> updateAirport(@RequestBody AirportDTO airportDTO) {
+    public ResponseEntity<Airport> updateAirport(@RequestBody @Valid AirportDTO airportDTO) {
         Airport airport = airportService.updateAirport(airportDTO);
         return new ResponseEntity<>(airport, HttpStatus.OK);
     }
